@@ -3,7 +3,8 @@ Conjurer
 
 Conjurer is a clever .NET implementation of the [Test Data Builder](http://www.natpryce.com/articles/000714.html) pattern that helps you set up objects in the arrange part of your tests.  Although useful in many situations, Conjurer is particularly good at setting up POCO style entity objects used with Entity Framework, NHibernate and similar persistence frameworks.
 
-To define a factory and build an object:
+##Getting started
+Use the "Presto" incantation to define a factory and build an object:
 
     Presto.Define<Person>(p => p.Name = "Somebody");
 
