@@ -90,7 +90,7 @@ Factories can create complex obejct graphs:
     var performance = Presto.Create<Performance>(p => p.Magician.Name = "Houdini");
     
 ##Persistence##
-Since Conjurer makes no assumptions about your choice of persistence framework, you must set up the appropriate persistence logic for your project manually. 
+Since Conjurer makes no assumptions about your choice of persistence framework, you must set up the appropriate persistence logic manually. 
 
 If you are using Entity Framework, the following will do:
 
@@ -107,7 +107,7 @@ To create and persist an object in one go:
 
     Presto.Persist<Person>();
     
-To create or persist an object, depending on the context:
+Use `Presto.CreateOrPersist` to create or persist an object, depending on the context:
 
     Presto.Define<Person>("magician", x => x.Role = Role.Magician);
     Presto.Define<Performance>(p => p.Magician = Presto.CreateOrPersist<Person>("magician"));
@@ -118,4 +118,4 @@ To create or persist an object, depending on the context:
     // Persist both performance and magician
     var persisted = Presto.Persist<Performance>();
     
-The `Presto.CreateOrPersist` method examines the call stack to see if it contains a call to `Presto.Persist`. If such a call is present higher up in the call stack, the created object will be persisted.    
+The `Presto.CreateOrPersist` method examines the call stack to see if it contains a call to `Presto.Persist`. If such a call is present higher up in the call stack, the created object will be persisted.
