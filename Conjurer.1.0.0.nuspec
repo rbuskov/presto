@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+    <metadata>
+        <id>Conjuror</id>
+        <version>1.0.0</version>
+        <title />
+        <authors>Rasmus Buskov</authors>
+        <owners />
+        <licenseUrl>https://github.com/rbuskov/Conjuror/blob/master/License.txt</licenseUrl>
+        <projectUrl>https://github.com/rbuskov/Conjuror</projectUrl>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <description>Conjuror is a clever .NET implementation of the Test Data Builder pattern that helps you set up objects in the arrange part of your tests. Although useful in many situations, Conjuror is particularly good at setting up POCO style entity objects used with Entity Framework, NHibernate and similar persistence frameworks.</description>
+        <summary>Data Builder pattern that helps you set up objects in the arrange part of your tests.</summary>
+        <copyright>Copyright 2013 Rasmus Buskov (MIT License)</copyright>
+        <language>en-US</language>
+        <tags>test data builder object mother</tags>
+    </metadata>
+    <files>
+        <file src="Conjuror\bin\Release\Conjuror.dll" target="lib\net35\Conjuror.dll" />
+    </files>
+</package>
