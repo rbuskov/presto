@@ -1,7 +1,7 @@
 ﻿using System;
 using Xunit;
 
-namespace Conjurer.Test.ConjurerTest
+namespace Conjurer.Tests.ConjurerTest
 {
     [Trait("Subject", "Presto")]
     public class ConjurerTest 

@@ -1,6 +1,6 @@
 ﻿using Xunit;
 
-namespace Conjurer.Test
+namespace Conjurer.Tests
 {
     [Trait("Subject", "Sequence")]
     public class SequenceTests

@@ -1,6 +1,6 @@
 ﻿using Xunit;
 
-namespace Conjurer.Test
+namespace Conjurer.Tests
 {
     [Trait("Subject", "Sequence Collection")]
     public class SequenceCollectionTests
@@ -11,14 +11,6 @@ namespace Conjurer.Test
             var collection = new SequenceCollection();
             Assert.Equal(0, collection.Next());
             Assert.Equal(1, collection.Next());
-        }
-
-        [Fact]
-        public void Can_seed_default_sequence()
-        {
-            var collection = new SequenceCollection();
-            collection.Seed(100);
-            Assert.Equal(100, collection.Next());
         }
 
         [Fact]

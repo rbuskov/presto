@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Conjurer.Test
+namespace Conjurer.Tests
 {
     public class Rabbit
     {
