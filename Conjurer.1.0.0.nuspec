@@ -11,7 +11,7 @@
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
         <description>Conjuror is a clever .NET implementation of the Test Data Builder pattern that helps you set up objects in the arrange part of your tests. Although useful in many situations, Conjuror is particularly good at setting up POCO style entity objects used with Entity Framework, NHibernate and similar persistence frameworks.</description>
         <summary>Data Builder pattern that helps you set up objects in the arrange part of your tests.</summary>
-        <copyright>Copyright 2013 Rasmus Buskov (MIT License)</copyright>
+        <copyright>Copyright 2013 Rasmus Buskov</copyright>
         <language>en-US</language>
         <tags>test data builder object mother</tags>
     </metadata>
