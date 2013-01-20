@@ -16,6 +16,6 @@
         <tags>test data builder object mother</tags>
     </metadata>
     <files>
-        <file src="Conjuror\bin\Release\Conjuror.dll" target="lib\net35\Conjuror.dll" />
+        <file src="Conjurer\bin\Release\Conjurer.dll" target="lib\net35\Conjurer.dll" />
     </files>
 </package>
