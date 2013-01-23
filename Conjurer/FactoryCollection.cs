@@ -27,7 +27,7 @@ namespace Conjurer
         {
             string key = GetKey<Product>(name);
 
-            if (factories.ContainsKey(key)) throw new DuplicateSequenceException(key);
+            if (factories.ContainsKey(key)) throw new DuplicateFactoryException(key);
 
             factories.Add(key, factory);
         }
@@ -41,7 +41,7 @@ namespace Conjurer
         {
             string key = GetKey<Product>(name);
 
-            if (!factories.ContainsKey(key)) throw new MissingSequenceException(key);
+            if (!factories.ContainsKey(key)) throw new MissingFactoryException(key);
 
             return factories[key] as IFactory<Product>;
         }
